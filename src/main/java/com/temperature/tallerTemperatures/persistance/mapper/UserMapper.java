@@ -10,4 +10,5 @@ public interface UserMapper {
 
     User toDomain(UserRequest userRequest);
     UserEntity toEntity(User user);
+    User entityToDomain(UserEntity userEntity);
 }

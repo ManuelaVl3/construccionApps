@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Table(name="temperaturereading")
-
 public class TemperatureReadingEntity {
 
     @Id
@@ -23,6 +22,7 @@ public class TemperatureReadingEntity {
     @Column(nullable = false)
     private LocalDateTime readingTime;
 
-    @Column(nullable = false)
-    private Integer deviceId;
+    @ManyToOne
+    @JoinColumn(name = "deviceId", nullable = false)
+    private DeviceEntity device;
 }

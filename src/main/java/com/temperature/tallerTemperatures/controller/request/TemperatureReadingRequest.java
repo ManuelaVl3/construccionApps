@@ -17,5 +17,5 @@ public class TemperatureReadingRequest {
     private LocalDateTime readingTime;
 
     @JsonProperty("device_id")
-    private Integer deviceId;
+    private Long deviceId;
 }

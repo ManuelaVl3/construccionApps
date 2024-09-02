@@ -8,9 +8,9 @@ import lombok.Setter;
 @Setter
 public class DeviceRequest {
 
-    @JsonProperty("location_id")
-    private Integer locationId;
+    @JsonProperty("name")
+    private String name;
 
-    @JsonProperty("status")
-    private boolean status;
+    @JsonProperty("description")
+    private String description;
 }
